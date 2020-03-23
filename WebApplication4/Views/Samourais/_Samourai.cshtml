@@ -1,0 +1,44 @@
+﻿@model BO.SamouraiVM
+<dt>
+    @Html.DisplayNameFor(model => model.Samourai.Force)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Samourai.Force)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.Samourai.Nom)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Samourai.Nom)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(model => model.Samourai.Arme)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Samourai.Arme.Nom)
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(m => m.Samourai.ArtMartiaux)
+</dt>
+
+<dd>
+    @foreach (var artm in Model.Samourai.ArtMartiaux)
+    {
+
+        @Html.DisplayFor(i => artm.Nom)<br>
+    }
+</dd>
+
+<dt>
+    @Html.DisplayNameFor(m => m.potentiel)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.potentiel)
+</dd>

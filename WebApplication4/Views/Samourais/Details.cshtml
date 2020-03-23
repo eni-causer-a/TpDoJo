@@ -1,0 +1,20 @@
+﻿@model BO.SamouraiVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Samourai</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.Partial("_Samourai",Model)
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Samourai.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
